@@ -8,9 +8,9 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ChessCoin - Strategic Cryptocurrency",
+  title: "ChessCoin 0.32% - Strategic Cryptocurrency",
   description:
-    "Cryptocurrency built on strategic thinking and efficient blockchain technology using Proof of Stake mechanism.",
+    "Cryptocurrency built on strategic thinking and efficient blockchain technology using PoS mechanism.",
   generator: "",
   icons: {
     icon: "/favicon.ico", // /public path

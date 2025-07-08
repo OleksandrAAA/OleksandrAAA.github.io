@@ -1,0 +1,92 @@
+[
+  {
+    "date": "Feb. 20, 2025",
+    "title": "Version 1.5.1 Released",
+    "description": "Upgraded project with Qt 5.15 framework and OpenSSL 3.4.0 library",
+    "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.5.1",
+    "icon": "Rocket",
+    "gradient": "from-blue-500 to-cyan-500",
+    "bgGradient": "from-blue-500/10 to-cyan-500/10",
+    "borderGradient": "border-blue-500/20"
+  },
+  {
+    "date": "Feb. 23, 2025",
+    "title": "Listing on NonKYC",
+    "description": "ChessCoin032 now available on NonKYC exchange platform",
+    "link": "https://nonkyc.io/",
+    "icon": "Globe",
+    "gradient": "from-green-500 to-emerald-500",
+    "bgGradient": "from-green-500/10 to-emerald-500/10",
+    "borderGradient": "border-green-500/20"
+  },
+  {
+    "date": "Mar. 01, 2025",
+    "title": "Website Update",
+    "description": "Major website redesign and functionality improvements",
+    "link": null,
+    "icon": "Globe",
+    "gradient": "from-purple-500 to-pink-500",
+    "bgGradient": "from-purple-500/10 to-pink-500/10",
+    "borderGradient": "border-purple-500/20"
+  },
+  {
+    "date": "Apr. 01, 2025",
+    "title": "Version 1.5.2 Release",
+    "description": "Latest core update with enhanced features and bug fixes",
+    "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.5.2",
+    "icon": "Rocket",
+    "gradient": "from-orange-500 to-red-500",
+    "bgGradient": "from-orange-500/10 to-red-500/10",
+    "borderGradient": "border-orange-500/20"
+  },
+  {
+    "date": "Apr. 19, 2025",
+    "title": "Electrum Server Upgrade",
+    "description": "Upgraded Electrum Server to Ubuntu 24.04 for better performance",
+    "link": null,
+    "icon": "Server",
+    "gradient": "from-teal-500 to-cyan-500",
+    "bgGradient": "from-teal-500/10 to-cyan-500/10",
+    "borderGradient": "border-teal-500/20"
+  },
+  {
+    "date": "Apr. 19, 2025",
+    "title": "Live Explorer Upgrade",
+    "description": "Enhanced blockchain explorer with improved functionality",
+    "link": "https://liveexplorer.chesscoin032.com/",
+    "icon": "Zap",
+    "gradient": "from-yellow-500 to-orange-500",
+    "bgGradient": "from-yellow-500/10 to-orange-500/10",
+    "borderGradient": "border-yellow-500/20"
+  },
+  {
+    "date": "Apr. 28, 2025",
+    "title": "Blockchain Snapshot",
+    "description": "ChessCoin032 blockchain snapshot at block 2,403,626",
+    "link": "https://mega.nz/file/hMFSDJrZ#UqTA0b_dQk0OpC2dDjCg0ndYRPtr9L9NFWbjBBEpYdQ",
+    "icon": "FileText",
+    "gradient": "from-indigo-500 to-purple-500",
+    "bgGradient": "from-indigo-500/10 to-purple-500/10",
+    "borderGradient": "border-indigo-500/20"
+  },
+  {
+    "date": "May. 08, 2025",
+    "title": "Block Explorer Update",
+    "description": "Enhanced block explorer with new features and improved UI",
+    "link": "https://explorer.chesscoin032.com/",
+    "icon": "Globe",
+    "gradient": "from-pink-500 to-rose-500",
+    "bgGradient": "from-pink-500/10 to-rose-500/10",
+    "borderGradient": "border-pink-500/20"
+  },
+  {
+    "date": "May. 31, 2025",
+    "title": "Whitepaper Released",
+    "description": "Official ChessCoin032 whitepaper now available",
+    "link": "https://e.pcloud.link/publink/show?code=XZrlftZ49NIFLMq9lLEEeLfvYKYubuv2IUXR",
+    "icon": "FileText",
+	 "gradient": "from-emerald-500 to-teal-500",
+    "bgGradient": "from-emerald-500/10 to-teal-500/10",
+    "borderGradient": "border-emerald-500/20"
+  }
+]

@@ -10,6 +10,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}"
   ],
+  safelist: [
+    {
+      pattern: /from-(cyan|blue|indigo|purple|green|gray|pink|red|yellow|emerald|teal)-\d{3}/,
+    },
+    {
+      pattern: /to-(cyan|blue|indigo|purple|green|gray|pink|red|yellow|emerald|teal)-\d{3}/,
+    },
+  ],
   theme: {
   	extend: {
   		colors: {
