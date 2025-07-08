@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   description:
     "Cryptocurrency built on strategic thinking and efficient blockchain technology using Proof of Stake mechanism.",
   generator: "",
+  icons: {
+    icon: "/favicon.ico", // /public path
+    shortcut: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
