@@ -24,69 +24,7 @@ import {
 import Link from "next/link"
 import Image from "next/image"
 
-interface NetworkStats {
-  blockHeight: number | null
-  maxSupply: number | null
-  loading: boolean
-  error: string | null
-  lastUpdated: string | null
-}
-
 export default function ExplorersPage() {
-  const [networkStats, setNetworkStats] = useState<NetworkStats>({
-    blockHeight: null,
-    maxSupply: null,
-    loading: true,
-    error: null,
-    lastUpdated: null,
-  })
-
-  const fetchNetworkStats = async () => {
-    try {
-      setNetworkStats((prev) => ({ ...prev, loading: true, error: null }))
-
-      const response = await fetch("/api/network-stats")
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
-      }
-
-      const data = await response.json()
-
-      if (data.error) {
-        throw new Error(data.message || data.error)
-      }
-
-      setNetworkStats({
-        blockHeight: data.blockHeight,
-        maxSupply: data.maxSupply,
-        loading: false,
-        error: null,
-        lastUpdated: data.timestamp,
-      })
-    } catch (error) {
-      console.error("Error fetching network stats:", error)
-      setNetworkStats((prev) => ({
-        ...prev,
-        loading: false,
-        error: error instanceof Error ? error.message : "Failed to fetch network data",
-      }))
-    }
-  }
-
-  useEffect(() => {
-    fetchNetworkStats()
-  }, [])
-
-  const formatBlockHeight = (num: number | null): string => {
-    if (num === null) return "Loading..."
-    return `${num.toLocaleString()} Blocks`
-  }
-
-  const formatSupply = (num: number | null): string => {
-    if (num === null) return "Loading..."
-    return `${(num / 1000000).toFixed(2)}M CHESS`
-  }
 
   const explorers = [
     {
@@ -285,74 +223,10 @@ export default function ExplorersPage() {
             ))}
           </div>
 
-          {/* Additional Info Section */}
+          {/* Additional Info Section - Now only contains Explorer Features card */}
           <div className="mt-20">
-            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div className="max-w-3xl mx-auto">
               <Card className="glass hover-lift animate-fadeInUp animate-delay-800">
-                <CardContent className="p-8">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center">
-                        <TrendingUp className="w-6 h-6 text-white" />
-                      </div>
-                      <h3 className="text-2xl font-bold">Network Statistics</h3>
-                    </div>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={fetchNetworkStats}
-                      disabled={networkStats.loading}
-                      className="text-muted-foreground hover:text-foreground"
-                    >
-                      {networkStats.loading ? (
-                        <Loader2 className="w-4 h-4 animate-spin" />
-                      ) : (
-                        <RefreshCw className="w-4 h-4" />
-                      )}
-                    </Button>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Block Time</span>
-                      <span className="font-semibold">5 minutes</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Block Height</span>
-                      <div className="flex items-center space-x-2">
-                        {networkStats.loading && <Loader2 className="w-4 h-4 animate-spin" />}
-                        <span className="font-semibold">
-                          {networkStats.error ? "Error" : formatBlockHeight(networkStats.blockHeight)}
-                        </span>
-                      </div>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">PoS Reward</span>
-                      <span className="font-semibold">0.32%</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-muted-foreground">Max Supply</span>
-                      <div className="flex items-center space-x-2">
-                        {networkStats.loading && <Loader2 className="w-4 h-4 animate-spin" />}
-                        <span className="font-semibold">
-                          {networkStats.error ? "Error" : formatSupply(networkStats.maxSupply)}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  {networkStats.error && (
-                    <div className="mt-4 p-3 bg-red-500/10 border border-red-500/20 rounded-lg">
-                      <p className="text-sm text-red-400">{networkStats.error}</p>
-                    </div>
-                  )}
-                  {networkStats.lastUpdated && !networkStats.error && (
-                    <div className="mt-4 text-xs text-muted-foreground">
-                      Last updated: {new Date(networkStats.lastUpdated).toLocaleTimeString()}
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-
-              <Card className="glass hover-lift animate-fadeInUp animate-delay-1000">
                 <CardContent className="p-8">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
@@ -381,7 +255,6 @@ export default function ExplorersPage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   )

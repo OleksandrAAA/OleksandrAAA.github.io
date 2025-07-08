@@ -25,8 +25,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/chesscoin-website.git
-cd chesscoin-website
+git clone https://github.com/OleksandrAAA/OleksandrAAA.github.io
+cd OleksandrAAA.github.io
 ```
 
 ### 2. Install Dependencies

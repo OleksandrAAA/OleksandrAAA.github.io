@@ -14,7 +14,6 @@ import {
   TrendingUp,
   Shield,
   Zap,
-  Users,
   Bitcoin,
   Send,
   Twitter,
@@ -26,7 +25,8 @@ import {
   BarChart3,
   Coins,
   ChevronDown,
-  Loader2,
+  CheckCircle,
+  Key,
 } from "lucide-react"
 import Image from "next/image"
 
@@ -45,19 +45,8 @@ interface Settings {
   }
 }
 
-interface NetworkStats {
-  maxSupply: number | null
-  loading: boolean
-  error: string | null
-}
-
 export default function ChessCoinHomepage() {
   const [scrollY, setScrollY] = useState(0)
-  const [networkStats, setNetworkStats] = useState<NetworkStats>({
-    maxSupply: null,
-    loading: true,
-    error: null,
-  })
   const [settings, setSettings] = useState<Settings>({
     heroBackground: {
       enabled: true,
@@ -91,46 +80,6 @@ export default function ChessCoinHomepage() {
       }
     }
   }, [])
-
-  useEffect(() => {
-    const fetchNetworkStats = async () => {
-      try {
-        setNetworkStats((prev) => ({ ...prev, loading: true, error: null }))
-
-        const response = await fetch("/api/network-stats")
-
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`)
-        }
-
-        const data = await response.json()
-
-        if (data.error) {
-          throw new Error(data.message || data.error)
-        }
-
-        setNetworkStats({
-          maxSupply: data.maxSupply,
-          loading: false,
-          error: null,
-        })
-      } catch (error) {
-        console.error("Error fetching network stats:", error)
-        setNetworkStats((prev) => ({
-          ...prev,
-          loading: false,
-          error: error instanceof Error ? error.message : "Failed to fetch network data",
-        }))
-      }
-    }
-
-    fetchNetworkStats()
-  }, [])
-
-  const formatSupply = (num: number | null): string => {
-    if (num === null) return "21M"
-    return `${(num / 1000000).toFixed(1)}M`
-  }
 
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -217,19 +166,8 @@ export default function ChessCoinHomepage() {
               {[
                 { icon: TrendingUp, value: "0.32%", label: "PoS Reward", color: "from-green-500 to-emerald-500" },
                 { icon: Zap, value: "5min", label: "Block Time", color: "from-blue-500 to-cyan-500" },
-                { icon: Shield, value: "8", label: "Confirmations", color: "from-purple-500 to-pink-500" },
-                {
-                  icon: Users,
-                  value: networkStats.loading ? (
-                    <Loader2 className="w-4 h-4 animate-spin mx-auto" />
-                  ) : networkStats.error ? (
-                    "21M"
-                  ) : (
-                    formatSupply(networkStats.maxSupply)
-                  ),
-                  label: "Max Supply",
-                  color: "from-orange-500 to-red-500",
-                },
+                { icon: CheckCircle, value: "8", label: "Confirmations", color: "from-purple-500 to-pink-500" },
+                { icon: Key, value: "Scrypt", label: "Algorithm", color: "from-orange-500 to-red-500" },
               ].map((stat, index) => (
                 <Card
                   key={index}
@@ -323,10 +261,9 @@ export default function ChessCoinHomepage() {
               <div className="space-y-4">
                 {[
                   "8 confirmations - Blocktime 5min - 0.32% PoS - 21000 transactions per block",
-                  "Transactions cost by Wallet 0.0001 Chess per each kb",
-                  `Max Supply ${networkStats.loading ? "Loading..." : networkStats.error ? "21 Million" : `${(networkStats.maxSupply || 21000000).toLocaleString()}`} Chess Coins 0.0001 - Distributed amount of Chess Coins`,
+                  "Transactions cost by Wallet 0.0001 Chess per each kb",                  
                   "The Coin Reward is 0.32%",
-                  "RNS Smart Chain (Reg.no)",
+                  "Consensus Mechanism - Algorithm Scrypt (PoW) + Proof of Stake (PoS)"
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -596,14 +533,20 @@ export default function ChessCoinHomepage() {
                   Download Whitepaper
                 </Button>
               </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 font-semibold px-8 py-4 text-lg hover-lift bg-transparent"
+              <Link
+                href="https://e.pcloud.link/publink/show?code=XZrlftZ49NIFLMq9lLEEeLfvYKYubuv2IUX"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <ExternalLink className="mr-2 w-5 h-5" />
-                View Documentation
-              </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 font-semibold px-8 py-4 text-lg transform hover:scale-105 transition-all duration-300 hover-lift bg-transparent"
+                >
+                  <ExternalLink className="mr-2 w-5 h-5" />
+                  View Whitepaper
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
