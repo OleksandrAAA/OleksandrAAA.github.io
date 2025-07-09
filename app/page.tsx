@@ -27,6 +27,7 @@ import {
   ChevronDown,
   CheckCircle,
   Key,
+  Clock,
 } from "lucide-react"
 import Image from "next/image"
 
@@ -165,7 +166,7 @@ export default function ChessCoinHomepage() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto animate-fadeInUp animate-delay-1000">
               {[
                 { icon: TrendingUp, value: "0.32%", label: "PoS Reward", color: "from-green-500 to-emerald-500" },
-                { icon: Zap, value: "5min", label: "Block Time", color: "from-blue-500 to-cyan-500" },
+                { icon: Clock, value: "5min", label: "Block Time", color: "from-blue-500 to-cyan-500" },
                 { icon: CheckCircle, value: "8", label: "Confirmations", color: "from-purple-500 to-pink-500" },
                 { icon: Key, value: "Scrypt", label: "Algorithm", color: "from-orange-500 to-red-500" },
               ].map((stat, index) => (

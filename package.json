@@ -2,12 +2,13 @@
   "name": "ChessCoin 0.32%",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://oleksandraaa.github.io",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "next build && gh-pages -d out",
+    "deploy": "next build && echo > out\\.nojekyll && gh-pages -d out",
     "start": "next start"
   },
 
