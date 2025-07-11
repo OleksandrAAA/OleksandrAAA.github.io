@@ -147,7 +147,7 @@ export default function ChessCoinHomepage() {
                 </Button>
               </Link>
               <Link
-                href="https://e.pcloud.link/publink/show?code=XZrlftZ49NIFLMq9lLEEeLfvYKYubuv2IUX"
+                href="https://e.pcloud.link/publink/show?code=XZXQ66ZnSDtxC6vcUJ5AFEVqJoha0lsvXS7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -522,7 +522,7 @@ export default function ChessCoinHomepage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
-                href="https://e.pcloud.link/publink/show?code=XZrlftZ49NIFLMq9lLEEeLfvYKYubuv2IUX"
+                href="https://e.pcloud.link/publink/show?code=XZXQ66ZnSDtxC6vcUJ5AFEVqJoha0lsvXS7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -535,7 +535,7 @@ export default function ChessCoinHomepage() {
                 </Button>
               </Link>
               <Link
-                href="https://e.pcloud.link/publink/show?code=XZrlftZ49NIFLMq9lLEEeLfvYKYubuv2IUX"
+                href="https://e.pcloud.link/publink/show?code=XZXQ66ZnSDtxC6vcUJ5AFEVqJoha0lsvXS7"
                 target="_blank"
                 rel="noopener noreferrer"
               >
