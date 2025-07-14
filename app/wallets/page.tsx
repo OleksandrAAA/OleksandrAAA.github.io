@@ -362,27 +362,27 @@ export default function WalletsPage() {
                     version: "1.4.5",
                     latest: true,
                     desc: "Latest x86 version with enhanced features",
-                    url: "https://github.com/AKKPP/1.4.5-ChessCoin032-x86/releases/tag/v1.4.5",
+                    url: "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.5",
                   },
                   {
                     version: "1.4.4",
                     desc: "Stable release with bug fixes",
-                    url: "https://github.com/AKKPP/ChessCoin032-new-GUI-version-1.4.4/releases/tag/v1.4.4",
+                    url: "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.4",
                   },
                   {
                     version: "1.4.3",
                     desc: "Previous stable version",
-                    url: "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.3",
+                    url: "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.3",
                   },
                   {
                     version: "1.4.2",
                     desc: "Legacy version for compatibility",
-                    url: "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.2",
+                    url: "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.2",
                   },
                   {
                     version: "1.4.1",
                     desc: "Older stable release",
-                    url: "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.1",
+                    url: "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.1",
                   },
                 ].map((wallet, index) => (
                   <Card key={index} className="glass hover-lift group">

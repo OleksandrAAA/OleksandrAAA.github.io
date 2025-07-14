@@ -276,7 +276,7 @@
         "date": "Nov. 11, 2021",
         "title": "ChessCoin 1.4 Released",
         "description": "Latest version with improved stability and features",
-        "link": "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.1",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.1",
         "linkText": "View Release",
         "icon": "Code",
         "color": "from-cyan-500 to-blue-500"
@@ -312,7 +312,7 @@
         "date": "Dec. 21, 2021",
         "title": "ChessCoin 1.4.1 Released",
         "description": "Final release of the year with bug fixes and optimizations",
-        "link": "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.1",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.1",
         "linkText": "View Release",
         "icon": "Code",
         "color": "from-purple-500 to-pink-500"
@@ -342,7 +342,7 @@
         "date": "Dec. 21, 2021",
         "title": "ChessCoin 1.4.1 Released",
         "description": "Final version release with improvements",
-        "link": "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.1",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.1",
         "linkText": "View Release",
         "icon": "Code",
         "color": "from-green-500 to-emerald-500"
@@ -394,7 +394,7 @@
         "date": "Mar. 15, 2022",
         "title": "Update on GitHub",
         "description": "Major repository updates and improvements",
-        "link": "https://github.com/AKKPP?tab=repositories",
+        "link": "https://github.com/ChessCoin032?tab=repositories",
         "linkText": "View Updates",
         "icon": "Code",
         "color": "from-indigo-500 to-purple-500"
@@ -532,7 +532,7 @@
         "date": "Sept. 03, 2022",
         "title": "Version 1.4.2 Released",
         "description": "Latest version with bug fixes and improvements",
-        "link": "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.2",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.2",
         "linkText": "Download v1.4.2",
         "icon": "Code",
         "color": "from-cyan-500 to-blue-500"
@@ -575,7 +575,7 @@
         "date": "Nov. 22, 2022",
         "title": "Wallet Upgrade - RPC IP Addresses",
         "description": "Wallet Upgrade Updated to allow IP addresses for RPC",
-        "link": "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.3",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.3",
         "linkText": "View Release v1.4.3",
         "icon": "Zap",
         "color": "from-blue-500 to-cyan-500"
@@ -661,7 +661,7 @@
         "date": "Jan. 23, 2023",
         "title": "Version 1.4.4 Released",
         "description": "Latest version with improvements and bug fixes",
-        "link": "https://github.com/AKKPP/ChessCoin032/releases/tag/v1.4.4",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.4",
         "linkText": "Download v1.4.4",
         "icon": "Code",
         "color": "from-green-500 to-emerald-500"
@@ -790,7 +790,7 @@
         "date": "July 10, 2023",
         "title": "New Windows Version 1.4.5",
         "description": "New Windows version released with new features",
-        "link": "https://github.com/AKKPP/1.4.5-ChessCoin032-x86/releases/tag/v1.4.5",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.5",
         "linkText": "Download v1.4.5 x86",
         "icon": "Code",
         "color": "from-blue-500 to-indigo-500"
@@ -799,7 +799,7 @@
         "date": "July 12, 2023",
         "title": "Version 1.4.5 x64 Release",
         "description": "64-bit version released",
-        "link": "https://github.com/AKKPP/1.4.5-ChessCoin032-x64/releases/tag/v1.4.5",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.5",
         "linkText": "Download v1.4.5 x64",
         "icon": "Code",
         "color": "from-cyan-500 to-blue-500"
@@ -810,11 +810,11 @@
         "description": "Raspberry Wallet Version 1.4.5.5 x64 and Version 1.4.5.5 x86 (32 bit) completed",
         "links": [
           {
-            "url": "https://github.com/AKKPP/1.4.5-ChessCoin032-x64/releases/tag/v1.4.5",
+            "url": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.5",
             "text": "Download x64"
           },
           {
-            "url": "https://github.com/AKKPP/1.4.5-ChessCoin032-x86/releases/tag/v1.4.5",
+            "url": "https://github.com/ChessCoin032/ChessCoin032-Core-x86/releases/tag/v1.4.5",
             "text": "Download x86"
           }
         ],
@@ -996,7 +996,7 @@
         "date": "Mar. 23, 2024",
         "title": "Update to Version 1.4.6 Ubuntu",
         "description": "Ubuntu version updated to 1.4.6 with enhanced features",
-        "link": "https://github.com/AKKPP/1.4.6-ChessCoin032-with-chess-engines/releases/tag/v1.4.6",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.6",
         "linkText": "Download v1.4.6",
         "icon": "Code",
         "color": "from-green-500 to-teal-500"
@@ -1032,7 +1032,7 @@
         "date": "Apr. 19, 2024",
         "title": "Version 1.4.6 Release",
         "description": "Official release of ChessCoin version 1.4.6 with chess engines integration",
-        "link": "https://github.com/AKKPP/1.4.6-ChessCoin032-with-chess-engines/releases/tag/v1.4.6",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.6",
         "linkText": "Download v1.4.6",
         "icon": "Rocket",
         "color": "from-blue-500 to-cyan-500"
@@ -1041,7 +1041,7 @@
         "date": "Jun. 03, 2024",
         "title": "ChessCoin-qt Version 1.4.7 with NTP and Chat",
         "description": "ChessCoin-qt Version 1.4.7 released with NTP synchronization and integrated chat features",
-        "link": "https://github.com/AKKPP/-1.4.7-ChessCoin032-ChessEngine-NTP-Chat/releases/tag/v1.4.7",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.7",
         "linkText": "Download v1.4.7",
         "icon": "MessageCircle",
         "color": "from-indigo-500 to-purple-500"
@@ -1064,7 +1064,7 @@
         "date": "Sep. 14, 2024",
         "title": "ChessCoin-qt Version 1.4.8 Burn and Memory Pool",
         "description": "ChessCoin-qt Version 1.4.8 released with burn functionality and memory pool improvements",
-        "link": "https://github.com/AKKPP/1.4.8-Burn-ChessCoins-and-Memory-Pool",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.8",
         "linkText": "View Repository",
         "icon": "Code",
         "color": "from-cyan-500 to-blue-500"
@@ -1091,7 +1091,7 @@
         "date": "Nov. 24, 2024",
         "title": "Version 1.4.9 Beta Release",
         "description": "ChessCoin v1.4.9 Beta version released for testing and feedback",
-        "link": "https://github.com/AKKPP/1.4.9/releases/tag/v1.4.9",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.4.9",
         "linkText": "Download Beta v1.4.9",
         "icon": "Code",
         "color": "from-yellow-500 to-orange-500"

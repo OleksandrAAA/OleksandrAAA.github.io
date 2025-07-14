@@ -88,5 +88,15 @@
 	 "gradient": "from-emerald-500 to-teal-500",
     "bgGradient": "from-emerald-500/10 to-teal-500/10",
     "borderGradient": "border-emerald-500/20"
+  },
+  {
+    "date": "Jun. 12, 2025",
+    "title": "New Website Released",
+    "description": "New website... https://chesscoin032.github.io/",
+    "link": "https://chesscoin032.github.io/",
+    "icon": "Globe",
+    "gradient": "from-orange-500 to-red-500",
+    "bgGradient": "from-orange-500/10 to-red-500/10",
+    "borderGradient": "border-orange-500/20"
   }
 ]

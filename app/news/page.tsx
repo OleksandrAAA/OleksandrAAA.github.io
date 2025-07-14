@@ -11,6 +11,7 @@ import {
   Zap,
   Brain,
   ArrowRight,
+  Mic,
 } from "lucide-react"
 import newsData from '@/data/news.json'
 
@@ -144,6 +145,22 @@ export default function NewsPage() {
               })}
             </div>
 
+            {/* All News */}
+            <div className="mt-16 text-center">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-600/5 to-orange-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="relative">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 mb-4">
+                    <Mic className="w-4 h-4 text-amber-400" />
+                    <span className="text-sm font-medium text-amber-300">Notification</span>
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-foreground mb-3">
+                    All news will be updated every day in Chat</h3>
+                </div>
+              </div>
+            </div>
+
             {/* Future Updates Teaser */}
             <div className="mt-16 text-center">
               <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-8">
@@ -172,7 +189,6 @@ export default function NewsPage() {
           </div>
         </div>
       </section>
-
       <Footer />
     </div>
   )

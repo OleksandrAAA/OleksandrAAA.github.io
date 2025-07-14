@@ -147,7 +147,7 @@ export default function ChessCoinHomepage() {
                 </Button>
               </Link>
               <Link
-                href="https://e.pcloud.link/publink/show?code=XZXQ66ZnSDtxC6vcUJ5AFEVqJoha0lsvXS7"
+                href="/whitepaper_chesscoin032_with_watermark.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -168,7 +168,7 @@ export default function ChessCoinHomepage() {
                 { icon: TrendingUp, value: "0.32%", label: "PoS Reward", color: "from-green-500 to-emerald-500" },
                 { icon: Clock, value: "5min", label: "Block Time", color: "from-blue-500 to-cyan-500" },
                 { icon: CheckCircle, value: "8", label: "Confirmations", color: "from-purple-500 to-pink-500" },
-                { icon: Key, value: "Scrypt", label: "Algorithm", color: "from-orange-500 to-red-500" },
+                { icon: Key, value: "scrypt", label: "Algorithm", color: "from-orange-500 to-red-500" },
               ].map((stat, index) => (
                 <Card
                   key={index}
@@ -522,7 +522,7 @@ export default function ChessCoinHomepage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
-                href="https://e.pcloud.link/publink/show?code=XZXQ66ZnSDtxC6vcUJ5AFEVqJoha0lsvXS7"
+                href="/whitepaper_chesscoin032_with_watermark.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -535,7 +535,7 @@ export default function ChessCoinHomepage() {
                 </Button>
               </Link>
               <Link
-                href="https://e.pcloud.link/publink/show?code=XZXQ66ZnSDtxC6vcUJ5AFEVqJoha0lsvXS7"
+                href="/whitepaper_chesscoin032_with_watermark.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
