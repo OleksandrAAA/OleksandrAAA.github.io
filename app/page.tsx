@@ -523,6 +523,7 @@ export default function ChessCoinHomepage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/whitepaper_chesscoin032_with_watermark.pdf"
+                download="ChessCoin_Whitepaper.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
