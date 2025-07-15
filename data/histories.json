@@ -958,11 +958,11 @@
       },
       {
         "date": "Mar. 07, 2024",
-        "title": "Version 1.4.6 Update Check",
-        "description": "Checkup for updates and improvements in version 1.4.6",
-        "link": "https://github.com/AKKPP/1.4.6-ChessCoin032-with-chess-engines",
+        "title": "Integrate Chess Engines with ChessCoin v1.4.6",
+        "description": "Adds chess engines for windows, ubuntu and raspberry to ChessCoin v1.4.6",
+        "link": "https://github.com/ChessCoin032/ChessCoin032-ChessEngines",
         "linkText": "View Repository",
-        "icon": "Zap",
+        "icon": "Grid",
         "color": "from-orange-500 to-red-500"
       },
       {

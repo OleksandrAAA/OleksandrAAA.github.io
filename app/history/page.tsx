@@ -36,6 +36,7 @@ import {
   TrendingUp,
   Link2,
   Server,
+  Grid,
 } from "lucide-react"
 
 import histories from '@/data/histories.json'
@@ -67,6 +68,7 @@ const iconMap = {
   TrendingUp,
   Link2,
   Server,
+  Grid,
 }
 
 interface HistoryEvent {
@@ -174,10 +176,10 @@ ChessCoin 0.32% also gets its chance to take advantage of 0.0001 transaction cos
 
             {/* Pagination Info */}
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <Badge variant="outline" className="px-4 py-2">
+              <Badge variant="outline" className="px-6 py-2 text-sm">
                 Page {currentPage} of {totalPages}
               </Badge>
-              <Badge variant="outline" className="px-4 py-2">
+              <Badge variant="outline" className="px-6 py-2 text-sm">
                 Year: {currentData[0]?.year}
               </Badge>
             </div>
