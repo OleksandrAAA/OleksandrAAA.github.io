@@ -38,12 +38,20 @@ export default function ExchangesPage() {
       features: ["No KYC", "Privacy Focused", "USDT Pair"],
     },
     {
-      name: "Finexbox",
+      name: "Nofinex",
       pair: "CHESS/BTC",
-      url: "https://www.finexbox.com/market/pair/CHESS-BTC.html",
+      url: "https://www.nofinex.com/market/pair/CHESS-BTC.html",
       type: "CEX",
-      color: "from-orange-500 to-red-500",
+      color: "from-teal-500 to-cyan-500",
       features: ["BTC Pair", "Centralized", "High Liquidity"],
+    },
+    {
+      name: "Nofinex",
+      pair: "CHESS/USDT",
+      url: "https://www.nofinex.com/market/pair/CHESS-USDT.html",
+      type: "CEX",
+      color: "from-blue-500 to-cyan-500",
+      features: ["USDT Pair", "Centralized", "High Liquidity"],
     },
     {
       name: "Latoken",
