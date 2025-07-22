@@ -232,7 +232,7 @@ export default function WalletsPage() {
                         <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                           Google Play (aab)
                         </h3>
-                        <Badge variant="secondary">1.1.0</Badge>
+                        <Badge variant="secondary">1.1.1</Badge>
                       </div>
                       <p className="text-muted-foreground mb-4">
                         Mobile wallet for Android devices and Chromebooks with full functionality
