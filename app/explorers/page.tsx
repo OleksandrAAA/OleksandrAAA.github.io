@@ -61,7 +61,7 @@ export default function ExplorersPage() {
       status: "Active",
     },
     {
-      name: "Bep-20",
+      name: "BNB Smart Chain (Bep-20)",
       description: "BEP-20 token explorer for ChessCoin on Binance Smart Chain",
       url: "https://bscscan.com/token/0x9Ca5DFa3b0b187d7F53f4ef83CA435a2Ec2e4070",
       type: "BSC Explorer",

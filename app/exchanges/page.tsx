@@ -101,17 +101,10 @@ export default function ExchangesPage() {
       color: "from-violet-500 to-purple-500",
       features: ["Ethereum", "Decentralized", "Liquidity Pools"],
     },
-    {
-      name: "Yobit",
-      pair: "CHESS/BTC",
-      url: "https://yobit.net/en/trade/CHESS/BTC",
-      type: "CEX",
-      color: "from-red-500 to-pink-500",
-      features: ["BTC Pair", "Established Exchange", "High Volume"],
-    },
   ]
 
   const closedExchanges = [
+    { name: "Yobit", url: "https://yobit.net/en/trade/CHESS/BTC", status: "only old ChessCoins 1.0" },
     { name: "Coinexchange", url: "https://www.coinexchange.io", status: "Closed" },
     { name: "Poswallet", url: "https://poswallet.com", status: "Closed" },
     { name: "Wallet Investors", url: "https://walletinvestors.com", status: "Closed" },
