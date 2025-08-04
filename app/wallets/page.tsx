@@ -19,6 +19,8 @@ import {
   Calendar,
   HardDrive,
   Cpu,
+  AppWindow, 
+  Cog,
 } from "lucide-react"
 
 export default function WalletsPage() {
