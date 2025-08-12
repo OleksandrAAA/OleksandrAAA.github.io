@@ -38,10 +38,23 @@ interface NewsItem {
 
 export default function NewsPage() {
   // Convert the JSON data to the format expected by the component
-  const newsItems = newsData.map((item: NewsItem) => ({
-    ...item,
-    icon: iconMap[item.icon as keyof typeof iconMap] || Globe,
-  }))
+  // const newsItems = newsData.map((item: NewsItem) => ({
+  //   ...item,
+  //   icon: iconMap[item.icon as keyof typeof iconMap] || Globe,
+  // }))
+
+  const newsItems = newsData
+    .map((item: NewsItem) => ({
+      ...item,
+      icon: iconMap[item.icon as keyof typeof iconMap] || Globe,
+    }))
+    .sort((a, b) => {
+      // Parse dates (remove '.' for correct parsing)
+      const parseDate = (dateStr: string) => new Date(dateStr.replace(/\./g, ''));
+      const dateA = parseDate(a.date);
+      const dateB = parseDate(b.date);
+      return dateB.getTime() - dateA.getTime(); // Newest first
+    });
 
   return (
     <div className="min-h-screen bg-background">
