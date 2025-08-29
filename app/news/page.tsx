@@ -1,5 +1,10 @@
+"use client"
+
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { GradientSpan } from "@/components/gradient-span"
+import { GradientText } from "@/components/gradient-text"
+
 import {
   Calendar,
   ExternalLink,
@@ -13,6 +18,7 @@ import {
   ArrowRight,
   Mic,
 } from "lucide-react"
+
 import newsData from '@/data/news.json'
 
 // Map icon names to actual components
@@ -22,6 +28,9 @@ const iconMap = {
   Server,
   Zap,
   FileText,
+  Newspaper,
+  Brain,
+  Mic,
 }
 
 interface NewsItem {
@@ -37,11 +46,6 @@ interface NewsItem {
 
 
 export default function NewsPage() {
-  // Convert the JSON data to the format expected by the component
-  // const newsItems = newsData.map((item: NewsItem) => ({
-  //   ...item,
-  //   icon: iconMap[item.icon as keyof typeof iconMap] || Globe,
-  // }))
 
   const newsItems = newsData
     .map((item: NewsItem) => ({
@@ -72,10 +76,10 @@ export default function NewsPage() {
               <span className="text-sm font-medium text-blue-300">Latest Updates</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 bg-clip-text text-transparent animate-fadeInUp animate-delay-200">
-              News 2025
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fadeInUp animate-delay-200">
+              <GradientText>News 2025</GradientText>
             </h1>
-
+            
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fadeInUp animate-delay-400">
               Stay updated with the latest ChessCoin032 developments, releases, and milestones
             </p>
@@ -99,7 +103,7 @@ export default function NewsPage() {
                 return (
                   <div
                     key={index}
-                    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-800/50 border border-slate-700/50 backdrop-blur-sm hover:border-slate-600/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/5"
+                    className="group relative overflow-hidden rounded-2xl bg-gradient-to-br border border-slate-700/50 backdrop-blur-sm hover:border-slate-600/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/5"
                     style={{
                       animationDelay: `${index * 100}ms`,
                     }}
@@ -116,9 +120,9 @@ export default function NewsPage() {
                             className={`p-3 rounded-xl bg-gradient-to-br ${item.bgGradient} border ${item.borderGradient}`}
                           >
                             <IconComponent
-                              className={`w-6 h-6 bg-gradient-to-r ${item.gradient} bg-clip-text`}
+                              className={`w-6 h-6 icon-gradient bg-gradient-to-r ${item.gradient} bg-clip-text`}
                             />
-                          </div>
+                          </div>                          
                           <div className="flex items-center gap-2 text-sm text-muted-foreground">
                             <Calendar className="w-4 h-4" />
                             <span className="font-medium">{item.date}</span>
@@ -127,7 +131,7 @@ export default function NewsPage() {
 
                         {/* Content */}
                         <div className="flex-1">
-                          <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-white transition-colors">
+                          <h3 className="text-xl font-bold text-foreground mb-2 transition-colors">
                             {item.title}
                           </h3>
                           <p className="text-muted-foreground leading-relaxed">{item.description}</p>
@@ -142,12 +146,9 @@ export default function NewsPage() {
                               rel="noopener noreferrer"
                               className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r ${item.bgGradient} border ${item.borderGradient} text-sm font-medium hover:scale-105 transition-all duration-200 group/link`}
                             >
-                              <span className={`bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent`}>
+                              <GradientSpan gradient={item.gradient}>
                                 View Details
-                              </span>
-                              <ExternalLink
-                                className={`w-4 h-4 bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent group-hover/link:translate-x-0.5 transition-transform`}
-                              />
+                              </GradientSpan>
                             </a>
                           </div>
                         )}
@@ -160,7 +161,7 @@ export default function NewsPage() {
 
             {/* All News */}
             <div className="mt-16 text-center">
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-8">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br border border-slate-700/50 backdrop-blur-sm p-8">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-600/5 to-orange-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="relative">
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/30 mb-4">
@@ -176,7 +177,7 @@ export default function NewsPage() {
 
             {/* Future Updates Teaser */}
             <div className="mt-16 text-center">
-              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-800/50 border border-slate-700/50 backdrop-blur-sm p-8">
+              <div className="group relative overflow-hidden rounded-2xl bg-gradient-to-br border border-slate-700/50 backdrop-blur-sm p-8">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-600/5 to-orange-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 <div className="relative">

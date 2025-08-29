@@ -32,7 +32,7 @@
   {
     "date": "Apr. 01, 2025",
     "title": "Version 1.5.2 Release",
-    "description": "Latest core update with enhanced features and bug fixes",
+    "description": "Added new checkpoint and fixed GUI stuck issues...",
     "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.5.2",
     "icon": "Rocket",
     "gradient": "from-orange-500 to-red-500",
@@ -98,5 +98,15 @@
     "gradient": "from-orange-500 to-red-500",
     "bgGradient": "from-orange-500/10 to-red-500/10",
     "borderGradient": "border-orange-500/20"
+  },
+  {
+    "date": "Aug. 30, 2025",
+    "title": "Version 1.5.3 Release",
+    "description": "Implemented social link menu and Chat 2.0 features, along with bug fixes.",
+    "link": "https://github.com/ChessCoin032/ChessCoin032-Core-x64/releases/tag/v1.5.3",
+    "icon": "Rocket",
+    "gradient": "from-blue-500 to-cyan-500",
+    "bgGradient": "from-blue-500/10 to-cyan-500/10",
+    "borderGradient": "border-blue-500/20"
   }
 ]
