@@ -103,7 +103,7 @@ export default function WalletsPage() {
                     <div className="lg:col-span-2">
                       <div className="flex items-center space-x-3 mb-4">
                         <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">ChessCoin GUI</h3>
-                        <Badge variant="secondary">1.5.2</Badge>
+                        <Badge variant="secondary">1.5.3</Badge>
                         <Badge className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 text-green-400 border-green-500/30">
                                 Latest
                         </Badge>
