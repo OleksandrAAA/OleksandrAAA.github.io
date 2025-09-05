@@ -108,5 +108,15 @@
     "gradient": "from-blue-500 to-cyan-500",
     "bgGradient": "from-blue-500/10 to-cyan-500/10",
     "borderGradient": "border-blue-500/20"
+  },
+  {
+    "date": "Sep. 04, 2025",
+    "title": "Explorer Websites Update",
+    "description": "Updated explorer logos and enhanced UI functionality for improved usability.",
+    "link": null,
+    "icon": "Globe",
+    "gradient": "from-purple-500 to-pink-500",
+    "bgGradient": "from-purple-500/10 to-pink-500/10",
+    "borderGradient": "border-purple-500/20"
   }
 ]
