@@ -1,5 +1,6 @@
 "use client"
 
+import { FloatingElements } from "@/components/floating-elements"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { GradientSpan } from "@/components/gradient-span"
@@ -61,7 +62,8 @@ export default function NewsPage() {
     });
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background text-foreground">
+      <FloatingElements />
       <Header />
 
       {/* Hero Section */}
