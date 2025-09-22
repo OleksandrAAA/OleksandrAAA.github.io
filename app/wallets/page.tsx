@@ -299,13 +299,13 @@ export default function WalletsPage() {
                         <h3 className="text-xl font-bold group-hover:text-blue-400 transition-colors">
                           ChessCoin 0.32% Blockchain Data
                         </h3>
-                        <Badge variant="secondary">Apr.28.2025</Badge>
+                        <Badge variant="secondary">Sep.22.2025</Badge>
                       </div>
                       <p className="text-muted-foreground mb-4">
                         Complete blockchain data for fast node synchronization and bootstrap
                       </p>
                       <p className="text-sm text-muted-foreground mb-4">
-                        <strong>Filename:</strong> ChessCoin032_blk.2403626_Apr.28.2025
+                        <strong>Filename:</strong> ChessCoin032_blk2434350_Sep_22_2025
                       </p>
 
                       <div className="flex flex-wrap gap-2 mb-4">
@@ -331,7 +331,7 @@ export default function WalletsPage() {
 
                     <div>
                       <Link
-                        href="https://mega.nz/file/hMFSDJrZ#UqTA0b_dQk0OpC2dDjCg0ndYRPtr9L9NFWbjBBEpYdQ"
+                        href="https://mega.nz/file/wUNQnBjR#FwTaO4vG4sL-5jzFpKnmDnIEddgYMRyYKPnSCtU4ROY"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -356,7 +356,7 @@ export default function WalletsPage() {
                   <h2 className="text-2xl font-bold">ChessCoin Core x86 GUI (Wallet and Staking)</h2>
                   <div className="flex items-center space-x-2 mt-1">
                     <Calendar className="w-4 h-4 text-muted-foreground" />
-                    <span className="text-sm text-muted-foreground">As Apr. 28, 2025</span>
+                    <span className="text-sm text-muted-foreground">As Sep. 22, 2025</span>
                   </div>
                 </div>
               </div>

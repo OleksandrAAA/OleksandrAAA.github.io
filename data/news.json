@@ -118,5 +118,15 @@
     "gradient": "from-purple-500 to-pink-500",
     "bgGradient": "from-purple-500/10 to-pink-500/10",
     "borderGradient": "border-purple-500/20"
+  },
+  {
+    "date": "Sep. 22, 2025",
+    "title": "Blockchain Bootstrap Snapshot",
+    "description": "Bootstrap file containing blockchain data synced up to block 2,434,350",
+    "link": "https://mega.nz/file/wUNQnBjR#FwTaO4vG4sL-5jzFpKnmDnIEddgYMRyYKPnSCtU4ROY",
+    "icon": "FileText",
+    "gradient": "from-indigo-500 to-purple-500",
+    "bgGradient": "from-indigo-500/10 to-purple-500/10",
+    "borderGradient": "border-indigo-500/20"
   }
 ]
